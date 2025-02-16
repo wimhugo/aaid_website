@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>aiid</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>  
+  <link href="css/overwrites.css" type="text/css" rel="stylesheet" media="screen,projection"/>  
+</head>
+
+<body style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:larger;">
+
+<!-- Main Menu -->    
+    
+<!-- Dropdown Structures -->
+    
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">For Users</a></li> 
+  <li><a href="#!">For Institutions</a></li>
+  <li><a href="#!">For Developers</a></li>
+  <li class="divider"></li>   
+  <li><a href="#!">Summary of Services</a></li>    
+</ul>
+    
+<!-- Menu Entries -->    
+    
+<nav style="background-color:#FFFFFF" role="navigation">
+    <div class="nav-wrapper container">
+      <img style="width: 150px;" src="image/logo_aiid_caps.png">
+      <a id="logo-container" href="#" class="brand-logo"> </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="modal-trigger" href="#!">Home</a></li>      
+        <li><a class="modal-trigger" href="#!">Services</a></li>    
+        <li><a class="modal-trigger" href="#!">Resources</a></li>  
+        <li><a class="modal-trigger" href="#!">Membership</a></li> 
+        <li><a class="modal-trigger" href="#!">About</a></li>
+        
+        <li><a id="open-sidenav-btn" onclick="openSideNav()" href="#"><i class="small material-icons">help</i></a>
+        <li><a href="sass.html" title="Search aiir"><i class="material-icons small">search</i></a></li>
+        <li><a href="badges.html" title="My Profile"><i class="material-icons small">person</i></a></li>
+        <li><a href="collapsible.html" title="Contact Us"><i class="material-icons small">mail</i></a></li>
+        <li><a href="mobile.html" title="More..."><i class="material-icons small">more_vert</i></a></li>
+      </ul>
+    </div>          
+  </nav>
+
+  <!-- FLOAtING BUttON-->
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large blue lighten-2">
+      <i class="large material-icons">info</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating tooltipped blue lighten-2" data-position="bottom" data-tooltip="View a dashboard of AiiD identifiers"><i class="material-icons">insert_chart</i></a></li>
+      <li><a class="btn-floating tooltipped blue lighten-2" data-position="bottom" data-tooltip="Publish your AiiD via DataCite"><i class="material-icons">publish</i></a></li>
+      <li><a class="btn-floating tooltipped blue lighten-2" data-position="bottom" data-tooltip="Create an AiiD using B2HANDLE"><i class="material-icons">create</i></a></li>
+      <li><a class="btn-floating tooltipped blue lighten-2" data-position="bottom" data-tooltip="Search for AiiD-referenced content"><i class="material-icons">search</i></a></li>
+      <li><a class="btn-floating tooltipped blue lighten-2" onclick="openSideNav()" data-position="bottom" data-tooltip="Background and Context, User Guidance" data-activates="slide-out"><i class="material-icons">help</i></a></li>   
+    </ul>  
+  </div>   
+    
+<!-- ##########################################################################################################################################-->     
+<!-- Side Navigation-->     
+      
+<div>
+  <a href="#" data-activates="slide-out" class="button-collapse "><i class="small material-icons grey-text darken-4 ">help</i></a>   
+</div>
+    
+<ul id="slide-out" class="side-nav right">
+      
+    <img  style="width: 200px; " src="image/logo_aiid_caps.png">
+    <!--<li>AIID Resources/li>-->     
+      
+    <ul class="collection">
+        <li class="collection-item">The Side Panel Navigation is used to provide contextual information, support, guidance, and functions without losing the main content.</li>
+        <li class="collection-item">The first sections provide examples of components and composite or specialised pages.</li>
+    </ul>
+    
+       <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Standard Page Components<i class="material-icons">arrow_drop_down</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a class="modal-trigger" href="#card-modal" style="font-size:12px; text-indent:50px">Cards</a></li> 
+                <li><a class="modal-trigger" href="#list-modal" style="font-size:12px; text-indent:50px">Simple List - Collapsible</a></li>                  
+                <li><a class="modal-trigger" href="#atlas-modal" style="font-size:12px; text-indent:50px">Training Materials</a></li>                   
+                <li><a class="modal-trigger" href="#disco-modal" style="font-size:12px; text-indent:50px">Instrument Calibration</a></li>            
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>      
+    
+       <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Composite Pages<i class="material-icons">arrow_drop_down</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a class="modal-trigger" href="#support-modal" style="font-size:12px; text-indent:50px">Standard/ Cards (Support)</a></li> 
+                <li><a class="modal-trigger" href="#list-modal" style="font-size:12px; text-indent:50px">Simple List - Collapsible</a></li>                  
+                <li><a class="modal-trigger" href="#atlas-modal" style="font-size:12px; text-indent:50px">Training Materials</a></li>                   
+                <li><a class="modal-trigger" href="#disco-modal" style="font-size:12px; text-indent:50px">Instrument Calibration</a></li>            
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>     
+    
+    <ul class="collection">
+        <li class="collection-item">The following sections provide an example of context-specific documentation and resources that are updated as the main content pane changes.</li>
+    </ul>    
+
+       <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">DANS Guidance<i class="material-icons">arrow_drop_down</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#" style="font-size:12px; text-indent:50px">Search for Resources</a></li>                  
+                <li><a href="#" style="font-size:12px; text-indent:50px">Training Materials</a></li>     
+                <li><a href="#" style="font-size:12px; text-indent:50px">Expertise Services</a></li>                               
+                <li><a href="#" style="font-size:12px; text-indent:50px">Knowledge Base</a></li>            
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>  
+      
+       <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">DANS Systems and Services<i class="material-icons">arrow_drop_down</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#" style="font-size:12px; text-indent:50px">Systems</a></li>
+                <li><a href="#" style="font-size:12px; text-indent:50px">Services</a></li>
+                <li><a href="#" style="font-size:12px; text-indent:50px">APIs</a></li>            
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li> 
+      
+       <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Integrating with DANS Systems<i class="material-icons">arrow_drop_down</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#" style="font-size:12px; text-indent:50px">For Developers</a></li>
+                <li><a href="#" style="font-size:12px; text-indent:50px">Metadata Services</a></li>   
+                <li><a href="#" style="font-size:12px; text-indent:50px">Data Services</a></li>
+                <li><a href="#" style="font-size:12px; text-indent:50px">Vocabulary Services</a></li>    
+                <li><a href="#" style="font-size:12px; text-indent:50px">Plug-Ins and Embedding</a></li>  
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>       
+</ul>        
+
+<!-- ###################################################################################################################################### --> 
+<!-- Main Content Page -->    
+
+<div>
+  <iframe style="width: 100%; height:1800px" src="page_about.html"></iframe>
+</div>
+    
+  
+<!-- ###################################################################################################################################### -->    
+<!-- Footer -->    
+    
+  <footer class="page-footer blue-grey darken-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+          <h5 class="white-text light">Technology</h5>
+          <p class="white-text light">AiiD uses Java, JavaScript, React, and Python to develop open, community-driven software that benefits our stakeholder community and wider society. 
+          <br/>
+          Visit us on <a class="blue-text text-lighten-3" href="#">GitHub</a>
+          </p>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text light">Legal</h5>
+          <ul>
+            <li><a class="white-text light" href="#!">Disclaimer</a></li>
+            <li><a class="white-text light" href="#!">Terms and Conditions</a></li>
+            <li><a class="white-text light" href="#!">Data Licenses</a></li>
+            <li><a class="white-text light" href="#!">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text light">API</h5>
+          <ul>
+            <li><a class="white-text light" href="#!">For Institutions</a></li>
+            <li><a class="white-text light" href="#!">For Researchers</a></li>
+            <li><a class="white-text light" href="#!">For Developers</a></li>
+            <li><a class="white-text light" href="#!">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text light">Contributors</h5>
+            <img style="width: 150px;" src="https://datacite.org/wp-content/uploads/2023/05/DataCite-Logo_secondary-bicolor-light.png">
+            <img style="width: 150px;" src="https://dans.knaw.nl/wp-content/uploads/2021/10/Logo-DANS.svg">
+            <img style="width: 150px;" src="https://www.eudat.eu/sites/default/files/b2henlde_0_4.png">
+        </div>          
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Created by <a class="blue-text text-lighten-3" href="#!">AiiD</a> using <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>, <a class="blue-text text-lighten-3" href="https://www.eudat.eu/services/userdoc/b2handle" target="_blank">B2HANDLE</a>, and DataCite <a class="blue-text text-lighten-3" href="#"> APIs</a>.
+      </div>
+    </div>
+  </footer>
+    
+ <!--MODALS-->    
+    
+  <!--GENERAL MODAL-->
+    
+  <div id="card-modal" class="modal">
+    <div class="modal-content">
+      <h5>Cards</h5>
+    </div>
+  </div>  
+  <div id="list-modal" class="modal">
+    <div class="modal-content">
+      <h5>Simple List Collapsible</h5>  
+    </div>
+  </div>     
+  <div id="support-modal" class="modal">
+    <div class="modal-content">
+      <h5>Support</h5>
+    </div>
+  </div>    
+ 
+  <div id="about-modal" class="modal">
+    <div class="modal-content">
+      <h5>About</h5>
+    </div>
+  </div>          
+    
+  <div id="search-modal" class="modal">
+    <div class="modal-content">
+      <h5>Search</h5>
+    </div>
+  </div>  
+    
+  <div id="profile-modal" class="modal">
+    <div class="modal-content">
+      <h5>Profiler</h5>
+    </div>
+  </div>        
+    
+  <div id="contr-modal" class="modal">
+    <div class="modal-content">
+      <h5>Contribute Data and Media</h5>
+    </div>
+  </div>
+
+  <div id="data-modal" class="modal">
+    <div class="modal-content">
+      <h5>Working with large distributed data sets in the web</h5>
+    </div>
+  </div>     
+    
+  <div id="crowd-modal" class="modal">
+    <div class="modal-content">
+      <h5>Building up a record of events and disasters</h5>
+    </div>
+  </div>      
+    
+  <div id="using-modal" class="modal">
+    <div class="modal-content">
+      <h5>Using SARVA 3.0</h5>
+    </div>
+  </div>   
+
+  <div id="frame-modal" class="modal">
+    <div class="modal-content">
+      <h5>SARVA 3.0 Semantic Framework</h5>
+    </div>
+  </div> 
+    
+  <div id="evidence-modal" class="modal">
+    <div class="modal-content">
+      <h5>Data and Evidence: Be Careful!</h5>
+    </div>
+  </div>     
+    
+  <div id="nccrd-modal" class="modal">
+    <div class="modal-content">
+      <h5>National Climate Change Response Database</h5>
+    </div>
+  </div>       
+    
+  <div id="atlas-modal" class="modal">
+    <div class="modal-content">
+     <h5>SARVA 3.0 Atlases and Online Data Sources</h5>
+    </div>
+  </div>    
+
+  <div id="disco-modal" class="modal">
+    <div class="modal-content">
+      <h5>Search and Discovery</h5>
+    </div>
+  </div>      
+    
+  <div id="saws-modal" class="modal">
+    <div class="modal-content">
+      <h5>SAWS Climate Atlas</h5>
+    </div>
+  </div>    
+    
+  <div id="beeh-modal" class="modal">
+    <div class="modal-content">
+      <h5>SA Atlas of Agrohydrology</h5>
+    </div>
+  </div>     
+    
+  <div id="sarv2-modal" class="modal">
+    <div class="modal-content">
+      <h5>SARVA 2.0 Report</h5>
+    </div>
+  </div>   
+    
+  <div id="sarv1-modal" class="modal">
+    <div class="modal-content">
+      <h5>SARVA 1.0 Report</h5>
+    </div>
+  </div>     
+    
+  <div id="read-modal" class="modal">
+    <div class="modal-content">
+      <h5>SARVA 2.0 - Reading Risk</h5>
+    </div>
+  </div>     
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js" defer></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <script src="js/init.js"></script>
+    <!-- <script src="js/pageStyles.js"></script> -->
+    <script src="js/pageFunctions.js"></script>
+    <script src="js/frame.js"></script>
+
+    <script>
+
+    // Sidenav
+    document.addEventListener('DOMContentLoaded', function() {
+
+      var elems = document.querySelectorAll('.side-nav');
+      console.log(elems);
+      var instances = M.Sidenav.init(elems);
+      alert('listener');
+
+      // Function to open sidenav on demand
+      function openSideNav() {
+        var sidenav = document.getElementById('slide-out');
+        console.log(sidenav);
+        var instance = M.Sidenav.getInstance(sidenav);
+        console.log(instance.id);
+        instance.open();  // Open the sidenav
+      }
+
+      // Example of calling the openSidenav function
+      // You can call openSidenav() whenever you want to open the sidenav
+      document.getElementById('open-sidenav-btn').addEventListener('click', openSideNav);
+    });      
+
+        
+    //Add Tooltips    
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.tooltipped');
+        var instances = M.Tooltip.init(elems, options);
+    });    
+        
+    // Process Modals Manually
+    // To be replaced with argument-driven function passing any URL to a modal form containing an iframe    
+    $(document).ready(function () {
+        $('.modal').modal({
+            startingTop: '-2%',
+            endingTop: '3%',
+            ready: function(modal, trigger) {
+                
+                var element = modal[0]
+                var iframe = document.createElement("iframe");
+                console.log('Boo hoo');
+                
+
+                if(element.id === 'card-modal') {
+                    iframe.src = "page_cards.html";}
+                else if(element.id === 'list-modal'){
+                    iframe.src = "page_simpleList.html";}     
+                else if(element.id === 'support-modal') {
+                    iframe.src = "page_support.html";}               
+                
+                else if(element.id === 'sarva-2-modal'){
+                    iframe.src = "http://app01.saeon.ac.za/PLATFORM_4/FRAME/accordian.html?URL=../../PLATFORM_4/SARVA/ATLAS/hardcopy_atlas.js&THEME=GREY";}  
+                else if(element.id === 'about-modal') {
+                    iframe.src = "page_about.html";}                
+                else if(element.id === 'search-modal') {
+                    //iframe.src = "http://www.sasdi.net/search.aspx?noframe=true";}
+                    iframe.src = "page_search.html";}    
+                else if(element.id === 'profile-modal') {
+                    iframe.src = "http://app01.saeon.ac.za/profiler/main.aspx";}
+
+                else if(element.id === 'contr-modal') {
+                    iframe.src = "page_contribute.html";} 
+                else if(element.id === 'using-modal') {
+                    iframe.src = "page_using.html";}  
+                else if(element.id === 'frame-modal') {
+                    iframe.src = "page_semantic.html";}  
+                else if(element.id === 'atlas-modal') {
+                    iframe.src = "page_atlas.html";}  
+                else if(element.id === 'disco-modal') {
+                    iframe.src = "page_search.html";}  
+                else if(element.id === 'data-modal') {
+                    iframe.src = "page_data.html";}  
+                else if(element.id === 'crowd-modal') {
+                    iframe.src = "page_crowd.html";}                  
+                else if(element.id === 'evidence-modal') {
+                    iframe.src = "page_evidence.html";}   
+                else if(element.id === 'nccrd-modal') {
+                    iframe.src = "http://app01.saeon.ac.za/nccrdsite/projects.html";}                   
+
+                else if(element.id === 'saws-modal') {
+                    iframe.src = "http://app01.saeon.ac.za/PLATFORM_4/FRAME/accordian.html?URL=../../PLATFORM_4/SARVA/ATLAS/atlas_sarva_saws.js&THEME=GREY";}  
+                else if(element.id === 'beeh-modal') {
+                    iframe.src = "http://app01.saeon.ac.za/PLATFORM_4/FRAME/accordian.html?URL=../../PLATFORM_4/SARVA/ATLAS/atlas_sarva_beeh.js&THEME=GREY";}  
+                else if(element.id === 'sarv2-modal') {
+                    iframe.src = "http://app01.saeon.ac.za/PLATFORM_4/FRAME/accordian.html?URL=../../PLATFORM_4/SARVA/ATLAS/hardcopy_atlas.js&THEME=GREY";}   
+                else if(element.id === 'sarv1-modal') {
+                    iframe.src = "http://app01.saeon.ac.za/PLATFORM_4/FRAME/accordian.html?URL=../../PLATFORM_4/SARVA/ATLAS/atlas_sarva_beeh.js&THEME=GREY";}   
+                else if(element.id === 'read-modal') {
+                    iframe.src = "http://app01.saeon.ac.za/PLATFORM_4/FRAME/accordian.html?URL=../../PLATFORM_4/SARVA/ATLAS/atlas_sarva_docs.js&THEME=GREY";}                       
+                iframe.height = "98%";
+                iframe.width = "100%";
+
+                element.appendChild(iframe);                   
+            }
+        });
+    });
+    </script>   
+
+  </body>
+
+</html>
